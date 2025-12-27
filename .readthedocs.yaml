@@ -1,11 +1,10 @@
 version: 2
 
-# 设置构建环境的操作系统和 Python 版本
 build:
   os: ubuntu-22.04
   tools:
     python: "3.10"
 
-# 告诉 Read the Docs 你的 conf.py 文件在哪里
+# 关键是下面这几行，告诉它去哪里找 conf.py
 sphinx:
   configuration: docs/source/conf.py
