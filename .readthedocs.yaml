@@ -4,10 +4,10 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.10"
-  # 新增：告诉系统安装哪些额外的 Python 包
   jobs:
     post_install:
-      - pip install sphinx-rtd-theme
+      # 在这里同时安装主题和 Markdown 转换插件
+      - pip install sphinx-rtd-theme m2r2
 
 sphinx:
   configuration: docs/source/conf.py
