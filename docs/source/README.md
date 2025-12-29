@@ -10,6 +10,8 @@
 
 此外，我更希望，大家能够在学习和科研中，真正的了解和认识自己。人生并不应该被保研、绩点、综测而束缚，而是应该在学习的过程中找到自己所爱，哪怕你在学习中发现自己并不适合该领域，打算退学去开咖啡店，我也是佩服和尊重的。请你在看完这段序言过后好好的问问自己，我到底需要什么？同学们的青春无限，我再此送给大家最后一句话，也是我最喜欢的一句话——**着力即差**。大胆的去做吧！
 
+
+
 ## 问题集（第一期）
 
 我觉得比起在群里回答，收集问题集进行集中的回答将会更有效率，且更能帮助到同学。在这里我会匿名上传一些同学们的相关问题，在这里进行解答（低质量或者太宽泛的问题恕我无法回答）：
@@ -34,6 +36,160 @@
 
 ​	A：这个主题会在我们的计划之中，敬请期待！
 
+5. **关于CV方向进行数理证明的部分，比如我通过试验发现了方法A效果比较好，但是没有办法用数理方法来说明why。如果要就这一个方法进行论文撰写，对这种情况有什么比较可行的方法进行解决嘛？**
+
+​	A：A good question. Infact，很多CV上的idea其实并没有很严格的数理说明。就拿数学理论比较得体的Diffusion来说，其实都是效果为王，甚至一些部分都是效果先于理论的，做出来了，有东西，大家才想着把它用数学上的方式进行证明（这是之前和一位做逆问题的学长谈话得知的）。所以你或许不需要太拘泥于数理如何严格证明，深度学习本来就是黑箱子，大家都是通过直觉自圆其说，只要你用公式能够勾勒出你方法合乎逻辑的直觉，我觉得就足够了。
+
+6. **深度学习中有没有一些稳定涨点又很有创新性的即插即用的模块，或者一些训练小技巧**
+
+​	A：有的有的，常用的比较直觉的方法就是各种注意力试一试，什么SE啊，CBAM、ESA，把这些直接搞上去看看效果，然后自己魔改就可以。第二种方法就是看看tb大哥卖的模块大全，可以说把深度学习肮脏的东西整理的非常干净。还有就比如Loss的使用很重要，比例，或者是经典的增加一些Contrastive Loss，这个感觉就是万金油。以及各种prior的注入，这些prior大多和domain knowledge相关，很多都可以一试！
+
+7. **如何评价一个工作是否solid？目前的困境是认为做好一个非常出彩的sota是很困难的，这种情况该如何克服（或者论文的包装工作是否需要在这个时候体现？）**
+
+​	A：这个问题问得好！首先刨除论文的包装，只研究方法本身的话我是这么理解的：一种工作，它可能在算法上没有太多新奇之处，但是他可能把很多个算法，很多个研究型的工作融会贯通到了一起，解决了一个很重要的工程性任务，在我看来这类任务基本没有细节创新，它也很值得发顶刊、顶会，而且它是确确实实的好用，好用到我们自己平时都会用这个框架解决工程上的任何问题，这就是一种好工作；另一种工作，它在效果上不算sota，指标相较起来也一般，但是却在数学或者理论，或者方法论层面开创了一个新的开阔的领域，等着后人探索，这种工作也是一种好工作，而且这种工作通常经得起时间的考验（这也是为什么我最近会去看一些20年前的数学方面的论文寻求灵感），但你要耐得住寂寞，有可能这辈子结束了你的理论都没有产生巨大影响。
+
+<u>	只是可惜，现在的大部分工作，大多吸取了二者的糟粕，又只有一点点皮毛上的算法创新，又只有一点点在某个过拟合或者被用烂的理想数据集上做出来了一丝丝效果。这就是时代的糟粕，也是我们快节奏科研，面对压力之下的无奈之举。</u>
 
 
-#### 
+
+## 资料合集
+
+对于刚入门深度学习的伙伴们，在基础学习路线上，我们给大家提供两种路线选择，但通常而言，我更喜欢第二类，即通过快速的练习，从工程中学习深度学习的知识，因为只看不用的学习马上都会忘记。第一类则是通过夯实理论基础，再去学习深度学习，考虑到一部分同学时间充裕且适应了这种办法，我们也表示理解。
+
+### 入门-深度学习
+
+#### 共同基础
+
+上海交通大学的生存手册，对我影响非常大的一本书，为此我撰写过很长的读后感
+
+[SurviveSJTU/SurviveSJTUManual: 更新2008年版本的《上海交通大学生存手册》gitbook发布于https://survivesjtu.gitbook.io/survivesjtumanual/ (github.com)](https://github.com/SurviveSJTU/SurviveSJTUManual/tree/master)
+
+
+
+如何使用翻墙[登录 - 魔戒.net (mojie.co)](https://mojie.co/login)
+
+mojie.net 花一点点钱订阅很多的流量，直接跟着网站上走就完事了，左下角有客服
+
+[bannedbook/fanqiang: 翻墙-科学上网 (github.com)](https://github.com/bannedbook/fanqiang)
+
+
+
+文献管理——zotero，网上一堆教程，随便一个都能看，很好学
+
+翻译软件——Deepl唯一真神[即时翻译文本&完整的文档文件。为个人和团队提供准确的翻译。每天有数百万人使用DeepL进行翻译。](https://www.deepl.com/zh/translator/l/en/en)
+
+
+
+在学习python的时候，也要学习使用VSCode或者Pycharm进行软件开发
+
+学会配环境，不然代码都跑不通，学会使用anaconda[【2025最新】Anaconda下载、安装、环境配置+Pycharm安装、激活、使用教程，零基础必看的保姆级python环境搭建教程！附安装包+激活码！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1ywpgz3EZv/?spm_id_from=333.337.search-card.all.click)
+
+
+
+学会使用jupyter notebook，别小看这玩意，我现在两个项目都得用它[python数据分析神器Jupyter notebook快速入门_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Q4411H7fJ/?spm_id_from=333.337.search-card.all.click)
+
+
+
+Cursor——纯粹的代码AI，功能非常强大，可以去网上下载一个试试
+
+
+
+#### 慢线——适合打基础
+
+[Mikoto10032/DeepLearning: 深度学习入门教程, 优秀文章, Deep Learning Tutorial (github.com)](https://github.com/Mikoto10032/DeepLearning)
+
+这里面基本攒齐了所有相关的教程，其中个人推荐Stanford系列的任何教程（从机器学习-到深度学习-到计算机视觉-到NLP），我当时听了一段时间NLP的课，感觉不错，但是因为性格使然，我不喜欢听网课学习，习惯网课的同学我强烈建议看，就比如ML你就可以看https://www.bilibili.com/video/BV1zZvPzDEa7?buvid=Y243B1239C5C346E4E3189205D3D81705F61&is_story_h5=false&mid=VbgutCudMKpF4yu2NqTz5g%3D%3D&plat_id=116&share_from=ugc&share_medium=ipad&share_plat=ios&share_source=WEIXIN&share_tag=s_i&timestamp=1767011308&unique_k=iFDnD5B&up_id=1945493325
+
+
+
+Udacity系列网课，我当时花钱买的代码资料，官网要几百刀：
+
+（无人驾驶入门课程）https://kjdfe.github.io/ljl.github.io/
+
+（无人驾驶入门代码）
+链接：https://pan.baidu.com/s/10bYWh5eRBYV6Kokjy-ixHA 提取码：6e7K
+
+
+
+（c++课程）https://yuit5.github.io/ylewrk.github.io/
+
+（c++代码）
+链接：https://pan.baidu.com/s/1-juKY5UlKv1KjhUOh4dZnQ 提取码：5WrT
+
+课程链接没有的话，可以去b站上搜，应该都有的
+
+
+
+python：
+
+[北京理工大学（导师：嵩天） - Python语言程序设计（零基础快速入门）深入体验Python学习，全套Python教程现在分享给大家_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1JF411L7SD/?spm_id_from=333.337.search-card.all.click)
+
+大一的时候我还是认真学了一段时间python的，这是当时看的老师，讲的很清晰，也很浅显
+
+
+
+pytorch——小土堆
+
+[PyTorch深度学习快速入门教程（绝对通俗易懂！）【小土堆】_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1hE411t7RN/?spm_id_from=333.337.search-card.all.click)
+
+
+
+除了基础知识，代码语法，还有就是要看paper，从0开始学看paper可以学习[如何读论文【论文精读·1】_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1H44y1t75x/?spm_id_from=333.337.search-card.all.click)
+
+精读7-15篇左右（看着按照视频里的学习），基本就可以树立好认知了。
+
+
+
+听完上面这些之后，就可以找项目练手了，**非常非常建议去github上找小项目**，还有就是**Kaggle**，一定要用起来
+
+
+
+#### 快线——适合快速上手
+
+去听一些最基础讲的最快的网课，确保树立对深度学习的认知即可
+
+
+
+直接上**Kaggle**，找到教程一栏，全是短小精悍的python，深度学习，机器学习，CV，小人物的教程，一个课5-7节，一节半小时以内掌握，直接一周内全部速通[Kaggle：你的机器学习与数据科学社区](https://www.kaggle.com/)，其中有不会的就问AI
+
+
+
+<u>淘宝冲一个Gemini会员，注意不要GPT的。然后开始疯狂问他如何开始学，开始实战，实战过程中任何不懂的地方直接找它问，问个明白就行。可以网上找个项目，从项目中学语法都是OK的，一开始可能看的慢一点，但没关系！</u>[Mikoto10032/DeepLearning: 深度学习入门教程, 优秀文章, Deep Learning Tutorial (github.com)](https://github.com/Mikoto10032/DeepLearning)
+
+
+
+还有就是要看paper，从0开始学看paper可以学习[如何读论文【论文精读·1】_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1H44y1t75x/?spm_id_from=333.337.search-card.all.click)
+
+
+
+看的差不多的话，就可以去复现文章了！关于复现文章，我寒假会开一个专题，**到时候敬请期待！**
+
+
+
+### 进阶——子领域学习
+
+个人非常建议通过综述论文的方式建立宏观的理解，如果这个领域找不到综述论文，就可以通过Github中寻找Awesome+你的领域英文名 寻找仓库，这种仓库的伟大之处不必多言！
+
+其它功能开发中——敬请期待！没有大家的支持我也没有动力更新下去了~
+
+#### 如何在Github上筛选出能跑的项目？
+
+
+
+#### 如何学会解决Debug？
+
+
+
+#### 如何鉴别出一篇论文的好坏？
+
+
+
+#### 如何客观评价一个期刊？如何寻找到适合你的期刊/会议？
+
+
+
+#### 如何学会使用爱思唯尔和IEEE以及Arxiv、Openreview看文章？
+
+
+
+#### 如何筛选出合适的Follow导师？
